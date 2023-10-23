@@ -98,7 +98,7 @@ function Login() {
 
         {/* <!-- image  --> */}
         <div className="md:w-1/2 flex items-center justify-center">
-            <img src="resources/login.jpg" className="mr-0 mt-16 md:mt-0"/>
+            <img src="resources/login.jpg" alt='login_img' className="mr-0 mt-16 md:mt-0"/>
         </div>
       </div>
            

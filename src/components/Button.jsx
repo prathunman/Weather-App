@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 function Button({changeState}) {
-    const handleClick = (state) => {
+    const handleClick = () => {
         changeState(true)
     };
   return (

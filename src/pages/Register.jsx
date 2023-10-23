@@ -108,7 +108,7 @@ function Register() {
 
             {/* <!-- image  --> */}
             <div className="md:w-1/2 flex items-center p-10 md:mr-16">
-                <img src="resources/register.jpg" className="mt-8 md:mt-16 "/>
+                <img src="resources/register.jpg" alt='register_image' className="mt-8 md:mt-16 "/>
             </div>
         </div>
     </div>
