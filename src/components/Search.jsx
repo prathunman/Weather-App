@@ -2,10 +2,10 @@ import React,{ useState } from 'react'
 import { Options, URL } from '../api/api'
 
 function Search({onSearchChange}) {
-     const [search, setSearch] = useState(null);
+     const [search, setSearch] = useState("colombo");
     const loadOptions = ()=>{
       return fetch(
-        `${URL}/cities?countryIds=LK&namePrefix=${search.target.value}`,
+        `${URL}/cities?countryIds=LK&namePrefix=${search}`,
         Options
       )
       .then((response) => response.json())
@@ -24,8 +24,8 @@ function Search({onSearchChange}) {
     
     const handleOnChange=(searchData)=>{
         // value is passes as object. so we can not use the name in url. if we want to use the object, change the value to object
-        // const value = searchData.target.value
-        setSearch(searchData);
+        const value = searchData.target.value
+        setSearch(value);
     }
   return (
     <div className='w-full relative space-y-10 mt-8 '>

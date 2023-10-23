@@ -38,7 +38,7 @@ console.log(open)
 
 
   return (
-    <div className='space-y-4'>
+    <div className='space-y-8 bg-gradient-to-br from-gray-200 via-slate-200 to-white'>
         <Search onSearchChange={handleOnSearchChange}/>
         {weather && <Weather data={weather}/>}
         <Button changeState={toggle}/>
